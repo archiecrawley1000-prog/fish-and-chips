@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+d<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -126,8 +126,60 @@
 
   </div>
 </section>
+<!-- CTA -->
+<section class="cta">
+  <h2>Visit Us Today</h2>
+  <p>Simple food done right.</p>
+</section>
 
-<
+<!-- HOURS -->
+<section class="hours">
+  <h2>Opening Hours</h2>
+  <ul>
+    <li><strong>Monday:</strong> 11:30 AM – 7:30 PM</li>
+    <li><strong>Tuesday:</strong> 11:30 AM – 7:30 PM</li>
+    <li><strong>Wednesday:</strong> 11:30 AM – 7:30 PM</li>
+    <li><strong>Thursday:</strong> 11:30 AM – 7:30 PM</li>
+    <li><strong>Friday:</strong> 11:30 AM – 7:30 PM</li>
+    <li><strong>Saturday:</strong> 11:30 AM – 7:30 PM</li>
+    <li><strong>Sunday:</strong> 11:30 AM – 7:30 PM</li>
+  </ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Bright Takeaway</p>
+  <p>Bright Takeaway · Bright, Victoria · Australian Owned</p>
+</footer>
+
+<!-- OPEN / CLOSED SCRIPT -->
+<script>
+  function updateStatus() {
+    const statusEl = document.getElementById("status");
+    const now = new Date();
+
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const time = hour + minute / 60;
+
+    const openTime = 11.5;
+    const closeTime = 19.5;
+
+    if (time >= openTime && time <= closeTime) {
+      statusEl.textContent = "🟢 Open now · Closes at 7:30 PM";
+      statusEl.className = "status open";
+    } else {
+      statusEl.textContent = "🔴 Closed · Opens at 11:30 AM";
+      statusEl.className = "status closed";
+    }
+  }
+
+  updateStatus();
+</script>
+
+</body>
+</html>
+
 
 
 
