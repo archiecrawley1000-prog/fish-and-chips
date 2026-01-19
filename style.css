@@ -281,6 +281,10 @@ footer {
   border: none;
   border-radius: 16px;
 }
+
+
+
+}
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 36px;
@@ -352,6 +356,7 @@ footer {
   line-height: 1.6;
   text-decoration: none;
 }
+
 
 
 
