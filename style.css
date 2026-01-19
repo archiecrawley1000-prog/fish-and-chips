@@ -223,7 +223,7 @@ footer {
   font-weight: 500;
 }
 
-}
+
 
 @media (max-width: 700px) {
   .info-strip {
@@ -282,9 +282,6 @@ footer {
   border-radius: 16px;
 }
 
-
-
-}
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 36px;
@@ -386,6 +383,7 @@ footer {
   line-height: 1.6;
   text-decoration: none;
 }
+
 
 
 
