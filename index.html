@@ -3,57 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bright Takeaway.</title>
-  <link rel="stylesheet" href="style.css" />
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "Bright Takeaway",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "30 Ireland St",
-    "addressLocality": "Bright",
-    "addressRegion": "VIC",
-    "postalCode": "3741",
-    "addressCountry": "AU"
-  },
-  "telephone": "+61 3 5755 1117",
-  "servesCuisine": "Australian Takeaway",
-  "openingHours": [
-    "Mo-Su 11:30-19:30"
-  ]
-}
-</script>
+  <title>Bright Takeaway</title>
 
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Schema.org for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Bright Takeaway",
+    "telephone": "+61 3 5755 1117",
+    "servesCuisine": "Australian Takeaway",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "30 Ireland St",
+      "addressLocality": "Bright",
+      "addressRegion": "VIC",
+      "postalCode": "3741",
+      "addressCountry": "AU"
+    },
+    "openingHours": [
+      "Mo-Su 11:30-19:30"
+    ]
+  }
+  </script>
 </head>
+
 <body>
 
+<!-- HERO -->
 <header class="hero">
   <div class="overlay">
     <h1>Bright Takeaway</h1>
     <p>Fish, chips & classic Aussie takeaway<br>Bright, Victoria</p>
-<p id="status" class="status"></p>
 
-     <a href="#menu" class="btn">View Menu</a>
+    <p id="status" class="status"></p>
+
+    <a href="#menu" class="btn">View Menu</a>
   </div>
 </header>
 
-
-    
-  </div>
-</header>
-
+<!-- ABOUT -->
 <section class="about">
-  <div class="content">
-    <h2>Fresh. Crispy. Timeless.</h2>
-    <p>
-      We serve traditional fish & chips using the freshest fish,
-      hand-cut potatoes, and golden batter — perfected for today.
-    </p>
-  </div>
- 
+  <h2>Fresh. Crispy. Timeless.</h2>
+  <p>
+    We serve traditional fish & chips using the freshest fish,
+    hand-cut potatoes, and golden batter — perfected for today.
+  </p>
 </section>
+
+<!-- CONTACT INFO -->
 <section class="contact-info">
   <div class="contact-card">
     <h3>📍 Address</h3>
@@ -66,17 +66,19 @@
       <a href="tel:+61357551117">+61 3 5755 1117</a>
     </p>
   </div>
+</section>
+
+<!-- MAP -->
 <section class="map">
   <h2>Find Us</h2>
   <iframe
     src="https://www.google.com/maps?q=30%20Ireland%20St%20Bright%20VIC%203741&output=embed"
-    allowfullscreen=""
-    loading="lazy">
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
   </iframe>
 </section>
 
-</section>
-
+<!-- MENU -->
 <section class="menu" id="menu">
   <h2>Our Menu</h2>
 
@@ -117,65 +119,16 @@
       <h3>📦 Boxes</h3>
       <ul>
         <li><strong>Ron’s Box</strong><br>Chicken schnitzel, small chips & gravy</li>
-        <li><strong>H.S.P</strong><br>Lamb, chips, cheese & sauces (mix or chicken available)</li>
-        <li><strong>Souvlaki Box</strong><br>Lamb or chicken, salad, chips & homemade garlic sauce</li>
+        <li><strong>H.S.P</strong><br>Lamb, chips, cheese & sauces</li>
+        <li><strong>Souvlaki Box</strong><br>Lamb or chicken, salad, chips & garlic sauce</li>
       </ul>
     </div>
 
   </div>
-
-<section class="cta">
-  <h2>Visit Us Today</h2>
-  <p>Simple food done right.</p>
-</section>
-<section class="hours">
-  <h2>Opening Hours</h2>
-  <ul>
-    <li><strong>Monday:</strong> 11:30 AM – 7:30 PM</li>
-    <li><strong>Tuesday:</strong> 11:30 AM – 7:30 PM</li>
-    <li><strong>Wednesday:</strong> 11:30 AM – 7:30 PM</li>
-    <li><strong>Thursday:</strong> 11:30 AM – 7:30 PM</li>
-    <li><strong>Friday:</strong> 11:30 AM – 7:30 PM</li>
-    <li><strong>Saturday:</strong> 11:30 AM – 7:30 PM</li>
-    <li><strong>Sunday:</strong> 11:30 AM – 7:30 PM</li>
-  </ul>
 </section>
 
-<footer>
-  <p>© 2026 Bright Takeaway</p>
+<
 
-</footer>
-<p>Bright Takeaway · Bright, Victoria · Australian Owned</p>
-
-<script>
-  function updateStatus() {
-    const statusEl = document.getElementById("status");
-    const now = new Date();
-
-    const day = now.getDay(); // 0 = Sunday, 1 = Monday
-    const hour = now.getHours();
-    const minute = now.getMinutes();
-    const time = hour + minute / 60;
-
-    const openTime = 11.5; // 11:30 AM
-    const closeTime = 19.5; // 7:30 PM
-
-    // Open Monday–Sunday
-    if (time >= openTime && time <= closeTime) {
-      statusEl.textContent = "🟢 Open now · Closes at 7:30 PM";
-      statusEl.className = "status open";
-    } else {
-      statusEl.textContent = "🔴 Closed · Opens at 11:30 AM";
-      statusEl.className = "status closed";
-    }
-  }
-
-  updateStatus();
-</script>
-
-</body>
-
-</html>
 
 
 
