@@ -130,22 +130,16 @@
     const statusEl = document.getElementById("status");
     const now = new Date();
 
-    const day = now.getDay(); // 0 = Sunday
+    const day = now.getDay(); // 0 = Sunday, 1 = Monday
     const hour = now.getHours();
     const minute = now.getMinutes();
     const time = hour + minute / 60;
 
-    // Open Tuesday–Sunday 11:30–19:30
-    const openTime = 11.5;
-    const closeTime = 19.5;
+    const openTime = 11.5; // 11:30 AM
+    const closeTime = 19.5; // 7:30 PM
 
-    const isOpenDay = day >= 2 && day <= 0 || day >= 2 && day <= 6;
-    const isOpenTime = time >= openTime && time <= closeTime;
-
-    if (day === 1) {
-      statusEl.textContent = "🔴 Closed today";
-      statusEl.className = "status closed";
-    } else if (isOpenTime) {
+    // Open Monday–Sunday
+    if (time >= openTime && time <= closeTime) {
       statusEl.textContent = "🟢 Open now · Closes at 7:30 PM";
       statusEl.className = "status open";
     } else {
@@ -160,6 +154,7 @@
 </body>
 
 </html>
+
 
 
 
