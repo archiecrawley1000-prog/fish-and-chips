@@ -357,6 +357,35 @@ footer {
   text-decoration: none;
 }
 
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.contact-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.contact-card p,
+.contact-card a {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  text-decoration: none;
+}
 
 
 
