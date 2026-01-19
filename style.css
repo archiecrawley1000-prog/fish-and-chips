@@ -213,4 +213,22 @@ footer {
   justify-content: space-between;
 }
 
+.info-strip {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .info-strip {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
 
