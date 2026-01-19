@@ -113,3 +113,26 @@ footer {
     padding: 40px;
   }
 }
+.hours {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.hours h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.hours ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: auto;
+}
+
+.hours li {
+  font-size: 1.1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
