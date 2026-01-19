@@ -125,10 +125,42 @@
 </footer>
 <p>Bright Takeaway · Bright, Victoria · Australian Owned</p>
 
+<script>
+  function updateStatus() {
+    const statusEl = document.getElementById("status");
+    const now = new Date();
+
+    const day = now.getDay(); // 0 = Sunday
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const time = hour + minute / 60;
+
+    // Open Tuesday–Sunday 11:30–19:30
+    const openTime = 11.5;
+    const closeTime = 19.5;
+
+    const isOpenDay = day >= 2 && day <= 0 || day >= 2 && day <= 6;
+    const isOpenTime = time >= openTime && time <= closeTime;
+
+    if (day === 1) {
+      statusEl.textContent = "🔴 Closed today";
+      statusEl.className = "status closed";
+    } else if (isOpenTime) {
+      statusEl.textContent = "🟢 Open now · Closes at 7:30 PM";
+      statusEl.className = "status open";
+    } else {
+      statusEl.textContent = "🔴 Closed · Opens at 11:30 AM";
+      statusEl.className = "status closed";
+    }
+  }
+
+  updateStatus();
+</script>
 
 </body>
 
 </html>
+
 
 
 
