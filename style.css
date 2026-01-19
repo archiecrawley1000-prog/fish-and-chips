@@ -218,9 +218,11 @@ footer {
   justify-content: center;
   gap: 40px;
   padding: 20px;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  background: transparent;
+  color: #fff;
   font-weight: 500;
+}
+
 }
 
 @media (max-width: 700px) {
@@ -262,6 +264,7 @@ footer {
 .contact-card a:hover {
   text-decoration: underline;
 }
+
 
 
 
